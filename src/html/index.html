@@ -1,0 +1,25 @@
+
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8"/>
+    <title>Desire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    @@include('chunk/header.html')
+    <div class="wrapper"> 
+      <main class="main">
+        @@loop('chunk/blocks-item.html', "../../data/blocks.json")  <!--таким образом модно выводить и другие повторяющиеся компоненты например карточки товаров-->
+        
+      </main>
+      @@include('chunk/footer.html')
+    </div>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
