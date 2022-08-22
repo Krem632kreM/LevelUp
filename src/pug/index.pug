@@ -7,23 +7,58 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet")
     link(rel="stylesheet", href="./css/main.css", attr)
+    script(defer src="js/main.js")
     title LevelUp
   body
-  main
-    .promo
-      .promo__wrapper
-        video(autoplay muted loop playsinline).promo__video
-          source(src="images/promo-video.mp4" type="video/mp4")
-        
-        .promo__presents
-            .promo__title LevelUp
-            img(src="images/prod.png", alt="image").promo__image
-            .promo__characteristics
-              ul.promo__list
-                li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing.
-                li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores?
-                li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing
-        button.order-btn.promo__order-btn заказать
-    .product-consist
-      .product-consist__wrapper
-  script(src="js/main.js")
+    .wrapper
+      button.order-btn заказать
+    main
+      .promo
+        .promo__wrapper
+          video(autoplay muted loop playsinline).promo__video
+            source(src="images/promo-video.mp4" type="video/mp4")
+          .promo__presents
+              .promo__title LevelUp
+              img(src="images/prod.png", alt="image").promo__image
+              .promo__characteristics
+                ul.promo__list
+                  li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing.
+                  li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores?
+                  li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing
+
+      .consist
+        .consist__wrapper
+          ul.consist__list.list-left
+            li.consist__item
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+              img(src="images/consist-1.jpg", alt="image").consist__img
+            li.consist__item
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+              img(src="images/consist-2.jpg", alt="image").consist__img
+            li.consist__item
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+              img(src="images/consist-3.jpg", alt="image").consist__img
+          img(src="images/prod.png", alt="image").consist__product
+          ul.consist__list.list-right
+            li.consist__item
+              img(src="images/consist-4.jpg", alt="image").consist__img
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+            li.consist__item
+              img(src="images/consist-5.jpg", alt="image").consist__img
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+            li.consist__item
+              img(src="images/consist-6.jpg", alt="image").consist__img
+              .consist__text
+                .title Lorem, ipsum.
+                .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
+            
