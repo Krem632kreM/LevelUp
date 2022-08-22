@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" attr>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script defer src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>LevelUp</title>
   </head>
   <body>
@@ -39,35 +41,35 @@
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
-              </div><img class="consist__img" src="images/consist-1.jpg" alt="image">
+              </div><img class="consist__img img" src="images/consist-1.jpg" alt="image">
             </li>
             <li class="consist__item">
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
-              </div><img class="consist__img" src="images/consist-2.jpg" alt="image">
+              </div><img class="consist__img img" src="images/consist-2.jpg" alt="image">
             </li>
             <li class="consist__item">
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
-              </div><img class="consist__img" src="images/consist-3.jpg" alt="image">
+              </div><img class="consist__img img" src="images/consist-3.jpg" alt="image">
             </li>
           </ul><img class="consist__product" src="images/prod.png" alt="image">
           <ul class="consist__list list-right">
-            <li class="consist__item"><img class="consist__img" src="images/consist-4.jpg" alt="image">
+            <li class="consist__item"><img class="consist__img img" src="images/consist-4.jpg" alt="image">
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
               </div>
             </li>
-            <li class="consist__item"><img class="consist__img" src="images/consist-5.jpg" alt="image">
+            <li class="consist__item"><img class="consist__img img" src="images/consist-5.jpg" alt="image">
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
               </div>
             </li>
-            <li class="consist__item"><img class="consist__img" src="images/consist-6.jpg" alt="image">
+            <li class="consist__item"><img class="consist__img img" src="images/consist-6.jpg" alt="image">
               <div class="consist__text">
                 <div class="title">Lorem, ipsum.</div>
                 <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!</div>
@@ -76,6 +78,25 @@
           </ul>
         </div>
       </div>
+      <div class="reviews">
+        <div class="reviews-swiper">
+          <div class="swiper-wrapper"> 
+            <div class="swiper-slide"> <img class="reviews__img img" src="images/consist-1.jpg" alt="image">
+              <div class="reviews__name">Mark Ynkovsky</div>
+              <div class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ratione veritatis inventore, culpa explicabo id?</div>
+            </div>
+            <div class="swiper-slide"> <img class="reviews__img img" src="images/consist-2.jpg" alt="image">
+              <div class="reviews__name">Mark Ynkovsky</div>
+              <div class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloribus totam. Tempore necessitatibus voluptate nisi itaque</div>
+            </div>
+            <div class="swiper-slide"> <img class="reviews__img img" src="images/consist-3.jpg" alt="image">
+              <div class="reviews__name">Mark Ynkovsky</div>
+              <div class="reviews__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quo hic nam deleniti quas eum eos harum totam adipisci recusandae.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <script type="module">import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'; const swiper = new Swiper('.reviews-swiper', {loop: true, autoplay: {delay: 2000},});</script>
   </body>
 </html>

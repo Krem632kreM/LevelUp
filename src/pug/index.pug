@@ -7,7 +7,9 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet")
     link(rel="stylesheet", href="./css/main.css", attr)
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
     script(defer src="js/main.js")
+    script(defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
     title LevelUp
   body
     .wrapper
@@ -33,32 +35,49 @@ html(lang="en")
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
-              img(src="images/consist-1.jpg", alt="image").consist__img
+              img(src="images/consist-1.jpg", alt="image").consist__img.img
             li.consist__item
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
-              img(src="images/consist-2.jpg", alt="image").consist__img
+              img(src="images/consist-2.jpg", alt="image").consist__img.img
             li.consist__item
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
-              img(src="images/consist-3.jpg", alt="image").consist__img
+              img(src="images/consist-3.jpg", alt="image").consist__img.img
           img(src="images/prod.png", alt="image").consist__product
           ul.consist__list.list-right
             li.consist__item
-              img(src="images/consist-4.jpg", alt="image").consist__img
+              img(src="images/consist-4.jpg", alt="image").consist__img.img
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
             li.consist__item
-              img(src="images/consist-5.jpg", alt="image").consist__img
+              img(src="images/consist-5.jpg", alt="image").consist__img.img
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
             li.consist__item
-              img(src="images/consist-6.jpg", alt="image").consist__img
+              img(src="images/consist-6.jpg", alt="image").consist__img.img
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
-            
+
+      .reviews
+        .reviews-swiper
+          .swiper-wrapper 
+            .swiper-slide 
+              img(src="images/consist-1.jpg", alt="image").reviews__img.img
+              .reviews__name Mark Ynkovsky
+              .reviews__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ratione veritatis inventore, culpa explicabo id?
+            .swiper-slide 
+              img(src="images/consist-2.jpg", alt="image").reviews__img.img
+              .reviews__name Mark Ynkovsky
+              .reviews__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloribus totam. Tempore necessitatibus voluptate nisi itaque
+            .swiper-slide 
+              img(src="images/consist-3.jpg", alt="image").reviews__img.img
+              .reviews__name Mark Ynkovsky
+              .reviews__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quo hic nam deleniti quas eum eos harum totam adipisci recusandae.
+   
+    script(type="module") import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'; const swiper = new Swiper('.reviews-swiper', {loop: true, autoplay: {delay: 2000},});
