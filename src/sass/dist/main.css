@@ -11,7 +11,6 @@
 
 * {
   box-sizing: border-box;
-  outline: solid red;
 }
 
 body {
@@ -32,11 +31,9 @@ body {
 
 main {
   z-index: 0;
-}
-
-.promo {
   overflow: hidden;
 }
+
 .promo__wrapper {
   position: relative;
   display: flex;
@@ -64,7 +61,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 2%;
 }
 .promo__title {
   font-weight: 700;
@@ -125,11 +122,9 @@ main {
   object-fit: cover;
 }
 
-.consist {
-  overflow: hidden;
-}
 .consist__wrapper {
-  margin: 5% 3%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,9 +160,6 @@ main {
   font-size: 20px;
 }
 
-.reviews {
-  overflow: hidden;
-}
 .reviews-swiper {
   background: linear-gradient(var(--color-white-light), var(--color-white-dark)) no-repeat;
 }
@@ -192,6 +184,34 @@ main {
   margin-bottom: 50px;
 }
 
+.promo-doc {
+  color: #fff;
+}
+.promo-doc__wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.promo-doc__list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 100px;
+  font-weight: 600;
+  gap: 100px;
+  padding: 0;
+}
+.promo-doc__text {
+  width: 500px;
+  font-size: 30px;
+}
+
 @media (max-width: 600px) {
   .consist__wrapper {
     flex-direction: column;
@@ -206,6 +226,10 @@ main {
 
   .list-right .consist__item {
     flex-flow: column;
+  }
+
+  .promo-doc__img {
+    width: 400px;
   }
 }
 @media (max-width: 700px) {
@@ -251,6 +275,19 @@ main {
     width: 200px;
     font-size: 14px;
   }
+
+  .promo-doc__img {
+    width: 200px;
+  }
+  .promo-doc__text {
+    font-size: 22px;
+    text-align: center;
+  }
+  .promo-doc__list {
+    font-size: 50px;
+    gap: 25px;
+    margin: 50px 50px;
+  }
 }
 @media (max-width: 1350px) {
   .list-left .consist__item {
@@ -283,5 +320,14 @@ main {
     width: 200px;
     height: 200px;
     object-fit: contain;
+  }
+
+  .promo-doc__list {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1350px) {
+  .promo-doc__list {
+    justify-content: center;
   }
 }

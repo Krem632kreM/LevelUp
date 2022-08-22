@@ -9,8 +9,6 @@
   --text-shadow-white: 2px 0 var(--color-white-light), -2px 0 var(--color-white-light), 0 2px var(--color-white-light), 0 -2px var(--color-white-light), 1px 1px var(--color-white-light), -1px -1px var(--color-white-light), 1px -1px var(--color-white-light), -1px 1px var(--color-white-light)
 *
   box-sizing: border-box
-  outline: solid red
-
 body
   font-family: "Montserrat"
   font-size: 20px
@@ -26,8 +24,8 @@ body
   display: none
 main
   z-index: 0
-.promo
   overflow: hidden
+.promo
   &__wrapper
     position: relative
     display: flex
@@ -55,7 +53,7 @@ main
     justify-content: center
     flex-wrap: wrap
     gap: 100px
-    margin-bottom: 200px
+    margin-bottom: 2%
 
   &__title
     font-weight: 700
@@ -114,9 +112,9 @@ main
   object-fit: cover
  
 .consist
-  overflow: hidden
   &__wrapper
-    margin: 5% 3%
+    margin-top: 50px
+    margin-bottom: 50px
     display: flex
     align-items: center
     justify-content: center
@@ -149,7 +147,6 @@ main
       font-size: 20px
 
 .reviews
-  overflow: hidden
   &-swiper
     background: linear-gradient(var(--color-white-light), var(--color-white-dark)) no-repeat
   &__img
@@ -168,7 +165,31 @@ main
   align-items: center
   margin-top: 50px
   margin-bottom: 50px
-  
+
+.promo-doc
+  color: #fff
+  &__wrapper
+    margin-top: 50px
+    margin-bottom: 50px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    gap: 30px
+  &__list
+    width: 100%
+    list-style: none
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 100px
+    font-weight: 600
+    gap: 100px
+    padding: 0
+  &__text
+    width: 500px
+    font-size: 30px
+    
 @media (max-width: 600px)
   .consist
     &__wrapper
@@ -181,6 +202,9 @@ main
   .list-right
     .consist__item
       flex-flow: column
+  .promo-doc
+    &__img
+      width: 400px
       
 
 @media (max-width: 700px)
@@ -216,6 +240,16 @@ main
     &__text
       width: 200px
       font-size: 14px
+  .promo-doc
+    &__img
+      width: 200px
+    &__text
+      font-size: 22px
+      text-align: center
+    &__list
+      font-size: 50px
+      gap: 25px
+      margin: 50px 50px
 
 @media (max-width: 1350px)
   .list-left
@@ -243,6 +277,16 @@ main
       width: 200px
       height: 200px
       object-fit: contain
+  .promo-doc
+    &__list
+      flex-direction: column
+
+@media (min-width: 1350px)
+  .promo-doc
+    &__list
+      justify-content: center
+
+
 
     
     
