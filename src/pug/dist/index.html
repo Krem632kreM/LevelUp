@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" attr>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script defer src="https://unpkg.com/imask"></script>
     <script defer src="js/main.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>LevelUp</title>
   </head>
   <body>
-    <div class="wrapper">
-      <button class="order-btn">заказать</button>
-    </div>
+    <div class="wrapper"><a href="#order-form__phone">
+        <button class="order-btn">заказать</button></a></div>
     <main>
       <div class="promo">
         <div class="promo__wrapper">
@@ -23,7 +23,7 @@
             <source src="images/promo-video.mp4" type="video/mp4">
           </video>
           <div class="promo__presents">
-            <div class="promo__title">LevelUp</div><img class="promo__image" src="images/prod.png" alt="image">
+            <div class="promo__title title">LevelUp</div><img class="promo__image" src="images/prod.png" alt="image">
             <div class="promo__characteristics">
               <ul class="promo__list">
                 <li class="promo__item">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
@@ -104,6 +104,26 @@
             <li class="promo-doc__item">Lorem</li>
             <li class="promo-doc__item">Lorem</li>
           </ul>
+        </div>
+      </div>
+      <div class="order-form" id="order-form">
+        <div class="order-form__wrapper">
+          <div class="title order-form__title">LevelUp</div>
+          <div class="title order-form__timer">
+            <div class="timer-numbers" id="timer"><span id="timer-hours">00</span><span>:</span><span id="timer-minutes">00</span><span>:</span><span id="timer-seconds">00</span></div>
+          </div><img class="order-form__image" src="images/prod.png" alt="image">
+          <div class="order-form__price">
+            <div class="title order-form__old-price">230$</div>
+            <div class="title order-form__new-price">150$</div>
+          </div>
+          <div class="order-form__form">
+            <div class="order-form__input-block">
+              <input class="order-form__input" required type="text"><span class="placeholder">Mark Ynkovsky</span>
+            </div>
+            <div class="order-form__input-block">
+              <input class="order-form__input" required type="text" id="order-form__phone"><span class="placeholder">+7(999)999-99-99</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>

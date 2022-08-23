@@ -8,26 +8,27 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet")
     link(rel="stylesheet", href="./css/main.css", attr)
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+    script(defer src="https://unpkg.com/imask")
     script(defer src="js/main.js")
     script(defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
     title LevelUp
   body
     .wrapper
-      button.order-btn заказать
+      a(href="#order-form__phone")
+        button.order-btn заказать
     main
       .promo
         .promo__wrapper
           video(autoplay muted loop playsinline).promo__video
             source(src="images/promo-video.mp4" type="video/mp4")
           .promo__presents
-              .promo__title LevelUp
+              .promo__title.title LevelUp
               img(src="images/prod.png", alt="image").promo__image
               .promo__characteristics
                 ul.promo__list
                   li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing.
                   li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores?
                   li.promo__item Lorem ipsum dolor sit amet consectetur adipisicing
-
       .consist
         .consist__wrapper
           ul.consist__list.list-left
@@ -63,7 +64,6 @@ html(lang="en")
               .consist__text
                 .title Lorem, ipsum.
                 .subtitle Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias recusandae corporis ex sit exercitationem!
-
       .reviews
         .reviews-swiper
           .swiper-wrapper 
@@ -87,5 +87,27 @@ html(lang="en")
             li.promo-doc__item Lorem
             li.promo-doc__item Lorem
             li.promo-doc__item Lorem
-    
+      .order-form#order-form
+        .order-form__wrapper
+          .title.order-form__title LevelUp
+          .title.order-form__timer
+            .timer-numbers#timer
+              span#timer-hours 00
+              span :
+              span#timer-minutes 00
+              span :
+              span#timer-seconds 00
+          img(src="images/prod.png", alt="image").order-form__image
+          .order-form__price
+            .title.order-form__old-price 230$
+            .title.order-form__new-price 150$
+          .order-form__form
+            .order-form__input-block
+              input(required type="text").order-form__input
+              span.placeholder Mark Ynkovsky
+            .order-form__input-block
+              input(required type="text").order-form__input#order-form__phone
+              span.placeholder +7(999)999-99-99
     script(type="module") import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'; const swiper = new Swiper('.reviews-swiper', {loop: true, autoplay: {delay: 2000},});
+
+  
